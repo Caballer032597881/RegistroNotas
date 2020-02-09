@@ -19,7 +19,7 @@ namespace RegistroN
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola Mundo");
+            MessageBox.Show("Tener grandes expectativas es la clave de todo");
         }
     }
 }
