@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace RegistroN
 {
-    public partial class Form1 : Form
+    public partial class FormEstudiantes : Form
     {
-        public Form1()
+        public FormEstudiantes()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void FormEstudiantes_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Tener grandes expectativas es la clave de todo");
+
         }
     }
 }
