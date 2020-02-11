@@ -29,15 +29,39 @@ namespace RegistroN
 
         private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var formEstudiantes = new FormEstudiantes();
-            formEstudiantes.MdiParent = this;
-            formEstudiantes.ShowDialog();
+            var formEstudiante = new FormEstudiante();
+            formEstudiante.MdiParent = this;
+            formEstudiante.Show();
         }
         
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Login();
+        }
+
+        private void Login()
+        {
             var formLogin = new FormLogin();
             formLogin.ShowDialog();
+        }
+
+        private void maestrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formMaestros = new FormMaestros();
+            formMaestros.MdiParent = this;
+            formMaestros.Show();
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+            Login();
+        }
+
+        private void notasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var formNotas = new FormNotas();
+            formNotas.MdiParent = this;
+            formNotas.Show();
         }
     }
 }

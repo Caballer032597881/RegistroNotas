@@ -65,6 +65,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(203, 217);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(143, 20);
             this.textBox2.TabIndex = 3;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -91,6 +92,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 

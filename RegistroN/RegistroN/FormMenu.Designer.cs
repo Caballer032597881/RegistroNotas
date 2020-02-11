@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.resgistroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,6 +38,7 @@
             this.reporteDeAlumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +59,8 @@
             // 
             this.resgistroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.alumnosToolStripMenuItem,
-            this.maestrosToolStripMenuItem});
+            this.maestrosToolStripMenuItem,
+            this.notasToolStripMenuItem});
             this.resgistroToolStripMenuItem.Name = "resgistroToolStripMenuItem";
             this.resgistroToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.resgistroToolStripMenuItem.Text = "Resgistro";
@@ -66,7 +69,7 @@
             // 
             this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
             this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.alumnosToolStripMenuItem.Text = "Estudiantes";
+            this.alumnosToolStripMenuItem.Text = "Estudiante";
             this.alumnosToolStripMenuItem.Click += new System.EventHandler(this.alumnosToolStripMenuItem_Click);
             // 
             // maestrosToolStripMenuItem
@@ -74,6 +77,7 @@
             this.maestrosToolStripMenuItem.Name = "maestrosToolStripMenuItem";
             this.maestrosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.maestrosToolStripMenuItem.Text = "Maestros";
+            this.maestrosToolStripMenuItem.Click += new System.EventHandler(this.maestrosToolStripMenuItem_Click);
             // 
             // cursosToolStripMenuItem
             // 
@@ -93,7 +97,7 @@
             // reporteDeAlumnosToolStripMenuItem
             // 
             this.reporteDeAlumnosToolStripMenuItem.Name = "reporteDeAlumnosToolStripMenuItem";
-            this.reporteDeAlumnosToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.reporteDeAlumnosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.reporteDeAlumnosToolStripMenuItem.Text = "Calificaciones";
             // 
             // seguridadToolStripMenuItem
@@ -111,17 +115,29 @@
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
+            // notasToolStripMenuItem
+            // 
+            this.notasToolStripMenuItem.Name = "notasToolStripMenuItem";
+            this.notasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.notasToolStripMenuItem.Text = "Notas";
+            this.notasToolStripMenuItem.Click += new System.EventHandler(this.notasToolStripMenuItem_Click);
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(435, 327);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMenu";
             this.Text = "Menu Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormMenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -140,5 +156,6 @@
         private System.Windows.Forms.ToolStripMenuItem reporteDeAlumnosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem notasToolStripMenuItem;
     }
 }

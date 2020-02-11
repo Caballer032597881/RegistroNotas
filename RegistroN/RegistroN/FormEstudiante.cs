@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace RegistroN
 {
-    public partial class FormEstudiantes : Form
+    public partial class FormEstudiante : Form
     {
-        public FormEstudiantes()
+        public FormEstudiante()
         {
             InitializeComponent();
-        }
-
-        private void FormEstudiantes_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

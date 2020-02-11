@@ -1,6 +1,6 @@
 ﻿namespace RegistroN
 {
-    partial class FormEstudiantes
+    partial class FormNotas
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // FormEstudiantes
+            // FormNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(346, 310);
-            this.Name = "FormEstudiantes";
-            this.Text = "Estudiantes";
-            this.Load += new System.EventHandler(this.FormEstudiantes_Load);
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "FormNotas";
+            this.Text = "Notas";
             this.ResumeLayout(false);
 
         }
